@@ -166,7 +166,6 @@ class sudoxu
             if (!$this->is_correct_block($x) or !$this->is_correct_row($x) or !$this->is_correct_col($x))
             {
                 return false;
-                break;
             }
         }
         return true;
@@ -202,7 +201,6 @@ class sudoxu
                 if (count($possible[$x]) == 0)
                 {
                     return (false);
-                    break;
                 }
             }
         }
@@ -226,7 +224,8 @@ class sudoxu
 
     private function next_random($possible)
     {
-        $max = $this->limit;
+        $min_choices = null;
+        $max         = $this->limit;
         for ($x = 0; $x < $this->limit * $this->limit; $x++)
         {
             if (!isset($possible[$x]))
@@ -273,7 +272,7 @@ class sudoxu
             $x++;
             $next_move = $this->scan_sudoku_for_unique();
 
-            if ($next_move == false)
+            if ($next_move === false)
             {
                 $next_move    = array_pop($saved);
                 $this->sudoku = array_pop($saved_sud);
