@@ -211,7 +211,8 @@ class sudoxu
     private function remove_attempt($attempt_array, $number)
     {
         $new_array = array();
-        for ($x = 0; $x < count($attempt_array); $x++)
+        $count     = count($attempt_array);
+        for ($x = 0; $x < $count; $x++)
         {
             if ($attempt_array[$x] != $number)
             {
