@@ -58,7 +58,7 @@ class Sudoku
      * Position of the cell in X-axis
      *
      * @param int $cell
-     * @return float
+     * @return int
      */
     private function return_row($cell)
     {
