@@ -1,0 +1,21 @@
+{
+    "name": "frnxstd/sudoxu",
+    "description": "Sudoxu is a simple sudoku creator class",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "http://sudoxu.com",
+    "authors": [
+        {
+            "name": "Burak",
+            "email": "burak@myself.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudoxu\\": "src/Sudoxu/"
+        }
+    }
+}
