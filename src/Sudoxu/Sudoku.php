@@ -389,12 +389,14 @@ class Sudoku
         while (!$this->is_solved_sudoku())
         {
             $x++;
-            $next_move = $this->scan_sudoku_for_unique();
+            $scan = $this->scan_sudoku_for_unique();
 
-            if ($next_move === false)
+            if ($scan === false)
             {
                 $next_move    = array_pop($saved);
                 $this->sudoku = array_pop($saved_sud);
+            } else {
+                $next_move    = (array) $scan;
             }
 
             $what_to_try = $this->next_random($next_move);
