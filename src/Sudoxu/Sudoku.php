@@ -269,7 +269,7 @@ class Sudoku
      *
      * @param array $possible
      * @param int   $cell
-     * @return array
+     * @return string
      */
     private function determine_random_possible_value($possible, $cell)
     {
