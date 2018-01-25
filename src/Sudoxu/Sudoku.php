@@ -279,7 +279,7 @@ class Sudoku
     /**
      * Determine if everything goes well
      *
-     * @return bool
+     * @return false|array
      */
     private function scan_sudoku_for_unique()
     {
