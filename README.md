@@ -1,5 +1,7 @@
 # [Sudoxu](http://sudoxu.com)
 
+[![Build Status](https://travis-ci.org/frnxstd/sudoxu.svg?branch=master)](https://travis-ci.org/frnxstd/sudoxu)
+
 Sudoxu is a light and easy to use PHP sudoku genarator class. It's able to create up to 6^2sq sudokus easily.
 
 http://sudoxu.com
