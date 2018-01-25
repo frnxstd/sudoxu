@@ -1,7 +1,6 @@
 {
     "name": "frnxstd/sudoxu",
     "description": "Sudoxu is a simple sudoku creator class",
-    "type": "project",
     "license": "MIT",
     "homepage": "http://sudoxu.com",
     "authors": [
